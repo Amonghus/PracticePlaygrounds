@@ -152,3 +152,16 @@ for lang in langs where lang != "Java"{
   print(lang)
 }
 print("java not printed")
+
+//end for
+
+// program to display numbers from 1 to 5
+
+// initialize the variable
+var i = 1, n = 10
+
+// while loop from i = 1 to 10
+while (i <= n) {
+  print(i)
+   i = i + 1
+}
