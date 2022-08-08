@@ -35,6 +35,12 @@ class Employee {
 var empno = 0
 // employee name
 var name = " "
+    
+    func showstatus(){
+        print("Status")
+        print("Employee ID: \(empno)")
+        print("Employee Name: \(name)")
+    }
 }
 
 // create two objects of the Employee class
@@ -51,3 +57,8 @@ employee2.empno = 1002
 employee2.name = "Firstname Lastname"
 print("Employee ID: \(employee2.empno)")
 print("Employee Name: \(employee2.name)")
+var employee3 = Employee()
+employee3.name = "Jim Halpert"
+employee3.empno = 1003
+employee3.showstatus()
+
