@@ -111,3 +111,15 @@ switch dayOfWeek {
   default:
     print("Invalid day")
 }
+
+//closure is a function without name
+// closure definition
+var multiply = { (num1: Int, num2: Int) -> (Int) in
+  var mul = num1 * num2
+  return mul
+}
+
+// closure call
+var result = multiply(3,4)
+
+print("Square:",result)
