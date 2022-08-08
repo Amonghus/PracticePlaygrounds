@@ -61,3 +61,27 @@ labrador.eat()
 
 // call subclass method
 labrador.display()
+
+//initializer and deinitializer
+// declare a class
+class  Car{
+  var power_in_hp: Double
+  var transmission : String
+
+  // initializer to initialize property
+  init() {
+    power_in_hp = 326
+    transmission = " Manual 6 Speed "
+    print("Default car is Honda NSX.")
+    print("Power (hp) = ", power_in_hp)
+    print("Transmission : ",transmission)
+  }
+    
+    deinit{
+        print("garage empty, get a new car!")
+    }
+}
+
+// create an object
+var garage: Car? = Car()
+garage = nil
