@@ -62,3 +62,22 @@ employee3.name = "Jim Halpert"
 employee3.empno = 1003
 employee3.showstatus()
 
+//flowcontrol
+//if else
+// check whether a number is positive, negative, or 0.
+
+let number = 6
+
+if (number > 0) {
+    print("Number is positive.")
+}
+
+else if (number < 0) {
+    print("Number is negative")
+}
+
+else {
+    print("Number is 0.")
+}
+
+
