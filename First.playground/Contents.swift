@@ -123,3 +123,32 @@ var multiply = { (num1: Int, num2: Int) -> (Int) in
 var result = multiply(3,4)
 
 print("Square:",result)
+
+//for while
+// access items of an array
+let languages = ["Swift", "Java", "Python", "JavaScript"]
+
+for language in languages {
+      print(language)
+}
+//with numbers
+// iterate from i = 1 to 1 = 3
+for i in 1...9 {
+    print(i)
+}
+print(" ")
+//for with stride
+
+for i in stride(from: 1, to: 10, by: 2) {
+    print(i)
+}
+
+//for with conditions
+// remove Java from an array
+
+let langs = ["Swift", "Java", "Go", "JavaScript"]
+
+for lang in langs where lang != "Java"{
+  print(lang)
+}
+print("java not printed")
