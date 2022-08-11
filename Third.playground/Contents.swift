@@ -23,3 +23,28 @@ print("A marathon is \(aMarathon) meters long")
 let  areainsqm = 50.ft*50.ft
 print("A 50ft by 50 plot is \(areainsqm)Square meters")
 
+//generics
+func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+
+
+//func swapTwoInts(_ a: inout Int, _ b: inout Int)
+//func swapTwoValues<T>(_ a: inout T, _ b: inout T)
+
+//example on generics
+var someInt = 3
+var anotherInt = 107
+swapTwoValues(&someInt, &anotherInt)
+// someInt is now 107, and anotherInt is now 3
+//printing the same
+print("\(someInt) and \(anotherInt)")
+
+var someString = "hello"
+var anotherString = "world"
+swapTwoValues(&someString, &anotherString)
+// someString is now "world", and anotherString is now "hello"
+//printing the same
+print("\(someString) and \(anotherString)")
